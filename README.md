@@ -31,8 +31,11 @@ AngularJS is one of the best Javascript App Frameworks available today and so Ma
 ### Roadmap
 - Bugfix requests are priority one.
 - New Features will be added as far as they make sense.
-- If demand is big for responsive design I will add it.
+- If demand is high for responsive design I will add it.
 
 ### Bugs
 Use the [Maverix Github Issue Tracker](https://github.com/tschundeee/maverix/issues).
 You can also reach out to me at [b.rahnema@gmail.com](mailto:b.rahnema@gmail.com?subject=Maverix)
+
+### Feedback
+I'm always happy about feedback.
