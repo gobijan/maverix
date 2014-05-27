@@ -38,4 +38,4 @@ Use the [Maverix Github Issue Tracker](https://github.com/tschundeee/maverix/iss
 You can also reach out to me at [b.rahnema@gmail.com](mailto:b.rahnema@gmail.com?subject=Maverix)
 
 ### Feedback
-I'm always happy about feedback.
+Feedback is always welcome.
