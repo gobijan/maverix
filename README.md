@@ -34,4 +34,5 @@ AngularJS is one of the best Javascript App Frameworks available today and so Ma
 - If demand is big for responsive design I will add it.
 
 ### Bugs
-Use the Github Issue Tracker: 
+Use the [Maverix Github Issue Tracker](https://github.com/tschundeee/maverix/issues).
+You can also reach out to me at [b.rahnema@gmail.com](mailto:b.rahnema@gmail.com?subject=Maverix)
