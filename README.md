@@ -1,6 +1,9 @@
 Maverix
 =======
 
+### Demo (Use Webkit or Blink Rendering Engine)
+http://screenisland.com/maverix/
+
 ### What is Maverix?
 
 Maverix is a maccish bootstrap theme and application boilerplate. It gives your web-apps a native look and feel and bundles AngularJS and other components such as jQuery, Flot and rangeslider.js
