@@ -1,0 +1,38 @@
+{
+  "name": "css-toggle-switch",
+  "version": "2.1.5",
+  "main": "./dist/toggle-switch.css",
+  "author": "Ionut Colceriu",
+  "ignore": [
+    "**/docs/",
+    "node_modules/",
+    "bower_components/",
+    ".sass-cache",
+    ".gitignore",
+    "npm-debug.log",
+    "*.html",
+    "CHANGELOG.md",
+    "Gruntfile.js",
+    "component.json",
+    "package.json"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3",
+    "foundation": "~5",
+    "normalize-css": "~2",
+    "bourbon": "~3",
+    "qunit": "~1",
+    "prism": "gh-pages"
+  },
+  "homepage": "https://github.com/ghinda/css-toggle-switch",
+  "_release": "2.1.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.5",
+    "commit": "b2d99093d6ce82b0421d002538d0f68aecfdfbf8"
+  },
+  "_source": "git://github.com/ghinda/css-toggle-switch.git",
+  "_target": "~2.1.5",
+  "_originalSource": "css-toggle-switch",
+  "_direct": true
+}

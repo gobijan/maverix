@@ -1,0 +1,14 @@
+{
+  "name": "entypo",
+  "homepage": "https://github.com/danielbruce/entypo",
+  "_release": "f94e077449",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f94e077449daa87321aa0df5643889460ba8291b"
+  },
+  "_source": "git://github.com/danielbruce/entypo.git",
+  "_target": "*",
+  "_originalSource": "entypo",
+  "_direct": true
+}

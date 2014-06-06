@@ -1,0 +1,121 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Charts</h2>
+
+        <div id="placeholder" class="demo-placeholder" style="width: 600px; height: 300px;"></div>
+
+        <hr/>
+
+        <div id="piechart" class="demo-placeholder" style="width: 600px; height: 300px;"></div>
+
+        <p class="indent">Maverix Theme is integrated with the awesome <a href="http://www.flotcharts.org"
+                                                                          target="_blank">Flot
+            Charts</a> Library. <a class="btn btn-help" href="https://github.com/flot/flot/blob/master/API.md"
+                                   target="_blank"><span class="entypo-help"></span></a></p>
+    </div>
+</div>
+
+<script>
+
+
+    // We use an inline data source in the example, usually data would
+    // be fetched from a server
+
+    var data = [],
+            totalPoints = 300;
+
+    function getRandomData() {
+
+        if (data.length > 0)
+            data = data.slice(1);
+
+        // Do a random walk
+
+        while (data.length < totalPoints) {
+
+            var prev = data.length > 0 ? data[data.length - 1] : 50,
+                    y = prev + Math.random() * 10 - 5;
+
+            if (y < 0) {
+                y = 0;
+            } else if (y > 100) {
+                y = 100;
+            }
+
+            data.push(y);
+        }
+
+        // Zip the generated y values with the x values
+
+        var res = [];
+        for (var i = 0; i < data.length; ++i) {
+            res.push([i, data[i]])
+        }
+
+        return res;
+    }
+
+    // Set up the control widget
+
+    var updateInterval = 24;
+
+    var plot = $.plot("#placeholder", [ getRandomData() ], {
+        series: {
+            shadowSize: 0,	// Drawing is faster without shadows
+            color: "#77B1DE"
+        },
+        yaxis: {
+            min: 0,
+            max: 100
+        },
+        xaxis: {
+            show: false
+        },
+        grid: {
+            backgroundColor: "#F5F5F5",
+            borderWidth: 1,
+            borderColor: "#E0E0E0"
+        }
+    });
+
+    function update() {
+
+        plot.setData([getRandomData()]);
+
+        // Since the axes don't change, we don't need to call plot.setupGrid()
+
+        plot.draw();
+        clearTimeout(update);
+        setTimeout(update, updateInterval);
+    }
+
+    update();
+</script>
+
+
+
+<script>
+
+    var pieData = [],
+            series = Math.floor(Math.random() * 6) + 3;
+
+    for (var i = 0; i < series; i++) {
+        pieData[i] = {
+            label: "Series" + (i + 1),
+            data: Math.floor(Math.random() * 100) + 1
+        }
+    }
+
+
+    $.plot('#piechart', pieData, {
+        series: {
+            pie: {
+                show: true
+            }
+        },
+        grid: {
+            hoverable: true,
+            clickable: true
+        }
+    });
+</script>

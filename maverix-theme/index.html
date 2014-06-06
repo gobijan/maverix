@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" ng-app="myApp" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maverix Bootstrap Theme</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/less/bootstrap.css" rel="stylesheet">
+    <link href="bower_components/css-toggle-switch/dist/toggle-switch.css" rel="stylesheet">
+    <link href="bower_components/rangeslider.js/dist/rangeslider.css" rel="stylesheet">
+    <link href="css/maverix.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-navicontainer">
+        <div class="sidebar-headbox">
+            <span class="sidebar-header">UI Elements</span>
+            <a class="sidebar-toggle">Hide</a>
+        </div>
+        <ul class="nav">
+            <li ng-class="{ selected: isActive('/maverix')}"><a href="#/maverix"><span class="entypo-window"></span>
+                Guide</a></li>
+            <li ng-class="{ selected: isActive('/controls')}"><a href="#/controls"><span class="entypo-plus-circled"></span>
+                Controls</a></li>
+            <li ng-class="{ selected: isActive('/forms')}"><a href="#/forms"><span class="entypo-pencil"></span>
+                Forms</a></li>
+            <li ng-class="{ selected: isActive('/modals')}"><a href="#/modals"><span class="entypo-window"></span>
+                Modals</a></li>
+            <li ng-class="{ selected: isActive('/tables')}"><a href="#/tables"><span class="entypo-list"></span>
+                Tables</a></li>
+            <li ng-class="{ selected: isActive('/icons')}"><a href="#/icons"><span class="entypo-box"></span>
+                Icons</a></li>
+            <li ng-class="{ selected: isActive('/type')}"><a href="#/type"><span class="entypo-behance"></span>
+                Typography</a></li>
+            <li ng-class="{ selected: isActive('/charts')}"><a href="#/charts"><span class="entypo-chart-bar"></span>
+                Charts</a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar-navicontainer">
+        <div class="sidebar-headbox">
+            <span class="sidebar-header">Example Pages</span>
+            <a class="sidebar-toggle">Hide</a>
+        </div>
+        <ul class="nav">
+            <li ng-class="{ selected: isActive('/view1')}"><a href="#/view1"><span class="entypo-monitor"></span>
+                Maverix</a></li>
+            <li ng-class="{ selected: isActive('/view2')}"><a href="#/view2"><span class="entypo-attention"></span>
+                Warnings <span class="sidebar-badge">4</span>
+            </a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar-navicontainer">
+        <div class="sidebar-headbox">
+            <span class="sidebar-header">Placeholder Accounts</span>
+            <a class="sidebar-toggle">Hide</a>
+        </div>
+        <ul class="nav">
+            <li><span class="entypo-user"></span> Users</li>
+            <li><span class="entypo-users"></span> Groups</li>
+            <li><span class="entypo-vcard"></span> Certificates</li>
+            <li><span class="entypo-doc-text"></span> Protocols</li>
+            <li><span class="entypo-chart-bar"></span> Stats</li>
+        </ul>
+    </div>
+
+    <div class="sidebar-navicontainer">
+        <div class="sidebar-headbox">
+            <span class="sidebar-header">Placeholder Services</span>
+            <a class="sidebar-toggle">Hide</a>
+        </div>
+        <ul class="nav">
+            <li><a href=""><span class="entypo-archive"></span> Caching</a></li>
+            <li><a href=""><span class="entypo-drive"></span> File Sharing</a></li>
+            <li><a href=""><span class="entypo-calendar"></span> Calendar</a></li>
+            <li><a href=""><span class="entypo-book"></span> Contacts</a></li>
+            <li><a href=""><span class="entypo-mail"></span> Mail</a></li>
+            <li><a href=""><span class="entypo-chat"></span> Messages <span class="sidebar-badge">1</span></a></li>
+            <li><a href=""><span class="entypo-newspaper"></span> Profile Manager</a></li>
+            <li><a href=""><span class="entypo-ccw"></span> Backups</a></li>
+            <li><a href=""><span class="entypo-lock"></span> VPN</a></li>
+            <li><a href=""><span class="entypo-globe"></span> Websites</a></li>
+            <li><a href=""><span class="entypo-docs"></span> Wiki</a></li>
+            <li><a href=""><span class="entypo-tools"></span> Build</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="heading-bar">
+    <!--<div class="user-bar">
+        Hi, Username | <a href="#">Sign out</a>
+    </div>-->
+    <span class="heading-one"><img ng-src="{{img}}" width="48"
+                                   height="48"> {{title}}</span>
+
+    <div id="top-switch" class="osx-switch" ng-if="showTopToggle">
+        <span class="osx-switch-label osx-switch-label-active">ON</span>
+        <span class="osx-switch-label osx-switch-label-inactive">OFF</span>
+        <label class="switch-light switch-candy" onclick="">
+            <input type="checkbox">
+            <a></a>
+        </label>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container-fluid container-maverix" ng-view>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="bower_components/rangeslider.js/dist/rangeslider.min.js"></script>
+<script src="bower_components/flot/jquery.flot.js"></script>
+<script src="bower_components/flot/jquery.flot.pie.js"></script>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app/js/app.js"></script>
+<script src="app/js/services.js"></script>
+<script src="app/js/controllers.js"></script>
+<script src="app/js/filters.js"></script>
+<script src="app/js/directives.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        // Sidebar Toggle Button Initialization
+        $(".sidebar-toggle").click(function (event) {
+            var $nextUl = $(event.target).parents().eq(1).find("ul.nav");
+            if (event.target.innerText === "Show") {
+                event.target.innerText = "Hide";
+            } else {
+                event.target.innerText = "Show";
+            }
+            $nextUl.slideToggle("fast", "swing");
+        });
+
+        $(document).on("focus", function (e) {
+            console.log("Focussed");
+        });
+
+        $(window).on('focus', function () {
+            $("body").removeClass("blur");
+        });
+
+        $(window).on('blur', function () {
+            $("body").addClass("blur");
+        });
+
+        // Rangeslider
+        $('input[type="range"]').rangeslider({
+            // Feature detection
+            polyfill: false
+        });
+    });
+</script>
+</body>
+</html>

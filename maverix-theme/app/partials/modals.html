@@ -1,0 +1,69 @@
+<!-- Button trigger modal -->
+        <div class="text-center">
+            <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                Launch demo modal
+            </button>
+
+        </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"><span class="entypo-users"></span> Modal title</h4>
+                <span class="modal-subtitle">This is a Modal Subtitle</span>
+            </div>
+            <div class="modal-body">
+                <h2>Content</h2>
+                <div class="table-cell">
+                    <table class="table-maverix table-maverix-small">
+                        <tr>
+                            <td class="td-icon"><span class="entypo-users"></span></td>
+                            <td>Everyone</td>
+                            <td class="text-right">
+                                <select class="on-white-select">
+                                    <option selected>No Access</option>
+                                    <option>Read</option>
+                                    <option>Read & Write</option>
+                                </select>
+                                <span class="entypo-arrow-combo"></span>
+                            </td>
+                        </tr>
+                        <tr class="selected">
+                            <td class="td-icon"><span class="entypo-user"></span></td>
+                            <td>Admin</td>
+                            <td class="text-right">
+                                <select class="on-white-select">
+                                    <option>No Access</option>
+                                    <option>Read</option>
+                                    <option selected>Read & Write</option>
+                                </select>
+                                <span class="entypo-arrow-combo"></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="td-icon"><span class="entypo-network"></span></td>
+                            <td>Staff</td>
+                            <td class="text-right">
+                                <select class="on-white-select">
+                                    <option>No Access</option>
+                                    <option selected>Read</option>
+                                    <option>Read & Write</option>
+                                </select>
+                                <span class="entypo-arrow-combo"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-on-grey" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-on-grey" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
