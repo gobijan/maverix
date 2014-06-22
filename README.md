@@ -1,6 +1,8 @@
 Maverix
 =======
 
+![Maverix](http://screenisland.com/maverix/maverix.png)
+
 ### Demo (Use Webkit or Blink Rendering Engine)
 http://screenisland.com/maverix/
 
